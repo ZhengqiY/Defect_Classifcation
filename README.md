@@ -96,6 +96,11 @@ image augmentation technique. Since the property of this dataset rules out many 
 
 ![Image Augmentation examples](https://github.com/ZhengqiY/Defect_Classifcation/blob/master/ImageAugmentationDefectClassification.PNG)
 
+## Results
+
+The following is the final neural network design, confusion matrix, classification reports, loss plot and training vs validation accuracy plot. By observing these two plots, we can conclude that the overfitting did not occur and the model was trained within our expectation. The performance of the model was verified by the f1-score from the classification reports and the
+layouts of the confusion matrix.
+
 | Layer | Parameter (#filters, kernel size, stride, padding, activation, kernel initializer, bias initializer) |
 | --- | --- |
 | Block 1 | 16, 3x3, (1,1), same, relu, RandomNormal, RandomNormal, input shape (64,64,1) |
