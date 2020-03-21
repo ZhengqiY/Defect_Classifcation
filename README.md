@@ -117,3 +117,6 @@ layouts of the confusion matrix.
 |         | Dropout 0.5 |
 | Block 6 | FC, Softmax generating 6 classes results |
 
+![Confusion Matrix](https://github.com/ZhengqiY/Defect_Classifcation/blob/master/ConfusionMatrixDefectClassification.PNG)
+![Classification Report](https://github.com/ZhengqiY/Defect_Classifcation/blob/master/ClassificationReportDefectClassification.PNG)
+![Training vs Validation](https://github.com/ZhengqiY/Defect_Classifcation/blob/master/TrainingVsValidationDefectClassification.PNG)
