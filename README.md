@@ -93,3 +93,22 @@ overall accuracy around 93%. However, experiments with zooming did not show that
 improvements. The best image augmentation technique we attempted so far was flipping. It
 improved the overall accuracy to around 94%-95%. Hence, we used vertical flipping as the
 image augmentation technique. Since the property of this dataset rules out many techniques
+
+![Image Augmentation examples](https://github.com/ZhengqiY/Defect_Classifcation/blob/master/ImageAugmentationDefectClassification.PNG)
+
+| Layer | Parameter (#filters, kernel size, stride, padding, activation, kernel initializer, bias initializer) |
+| --- | --- |
+| Block 1 | 16, 3x3, (1,1), same, relu, RandomNormal, RandomNormal, input shape (64,64,1) |
+|         | Max pooling with pool size (2,2) |
+|         | Dropout 0.25 |
+| Block 2 | 32, 3x3, (1,1), same, relu, RandomNormal, RandomNormal |
+|         | Max pooling with pool size (2,2) |
+|         | Dropout 0.25 |
+| Block 3 | 64, 3x3, (1,1), same, relu, RandomNormal, RandomNormal |
+|         | Max pooling with pool size (2,2) |
+|         | Dropout 0.25 |
+| Block 4 | Flatten |
+| Block 5 | Dense, 128, relu |
+|         | Dropout 0.5 |
+| Block 6 | FC, Softmax generating 6 classes results |
+
